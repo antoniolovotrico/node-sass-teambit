@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+        <!-- style.css -->
+        <link rel="stylesheet" href="./dist/css/app.css">
+        <title>node-sass-teambit</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="gen_container">
+                <header>
+                    <nav class="d_flex">
+                        <div class="logo">
+                            <img :src="nav[0].logo" alt="">
+                            <h3>{{nav[0].title}}</h3>
+                        </div>
+                        <div class="nav_menu">
+                            <ul class="menu_list d_flex" v-for="item in nav">
+                                <li class="menu_voice">{{item.voice}}</li>
+                            </ul>
+                        </div>
+                        <div class="nav_btn">
+                            <button><img :src="nav[3].btnIcon" alt="">{{nav[3].btnText}}</button>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <!-- hero section -->
+                    <section class="hero_wrapper d_flex">
+                        <div class="hero_main_container d_flex">
+                            <div class="hero_title_container d_flex" v-for="item in hero">
+                                <h1>{{item.title}}</h1>
+                                <h3>{{item.overview}}</h3>
+                                <div class="btn_double_container d_flex">
+                                    <button><img :src="item.btnIcon1" alt=""> {{item.btnText1}}</button> or
+                                    <button><img :src="item.btnIcon2" alt=""> {{item.btnText2}}</button>
+                                </div>
+                                <p><a href="">{{item.email}} <i class="fas fa-arrow-right"></i></a></p>
+                            </div>
+                            <div class="hero_img" v-for="item in hero">
+                                <img :src="item.img" alt="">
+                            </div>
+                        </div>
+                        
+                    </section>
+                    <!-- //hero section -->
+
+                    <!-- problem and solution section -->
+                    <section class="organization_wrapper d_flex">
+                        <div class="problems_container d_flex">
+                            <div class="section_title" v-for="item in organization">
+                                <h2>{{item.titleProb}}</h2>
+                            </div>
+                            <div class="cards_container d_flex">
+                                <div class="cards d_flex" v-for="item in organization">
+                                    <img :src="item.imgProb" alt="">
+                                    <p>{{item.paraProb}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="solutions_container d_flex">
+                            <div class="section_title" v-for="item in organization">
+                                <h2>{{item.titleSolu}}</h2>
+                            </div>
+                            <div class="cards_container d_flex">
+                                <div class="cards d_flex" v-for="item in organization">
+                                    <img :src="item.imgSolu" alt="">
+                                    <p>{{item.paraSolu}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- //problem and solution section -->
+                </main>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- VueJs CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+       
+        <!-- link to javascript file -->
+        <script src="./dist/js/app.js"></script>
+    </body>
+</html>
