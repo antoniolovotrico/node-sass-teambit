@@ -3,7 +3,7 @@
 @import 'partials/_commons';
 
 .organization_wrapper{
-    @include flex_wrapper(column);
+    @include flex_container(column,100%,center,center);
     background-color: $bg_salmon;
     .section_title{
         width: 600px;
@@ -17,11 +17,11 @@
     }
 }
 .problems_container{
-    @include flex_wrapper(column);
+    @include flex_container(column,1080px,center,center);
     border-bottom: 1px solid $color_font;
 }
 .solutions_container{
-    @include flex_wrapper(column);
+    @include flex_container(column,1080px,center,center);
 }
 .cards_container{
     @include flex_container(row,1080px,center,center);
