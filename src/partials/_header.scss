@@ -2,15 +2,22 @@
 @import 'partials/_mixins';
 @import 'partials/_commons';
 
+header{
+    @include flex_container(row,100%,center,center);
+
+}
 nav{
-    @include flex_container(row,1080px,space-between,center);
+    @include flex_container(row,90%,space-between,center);
     border-bottom: 1px solid $color_font;
 }
 .right_nav{
-    @include flex_container(row,600px,flex-end,center);
+    @include flex_container(row,100%,flex-end,center);
+}
+.nav_menu{
+    @include flex_container(row,50%,flex-end,center);
 }
 .menu_list{
-    @include flex_container(row,400px,space-evenly,center);
+    @include flex_container(row,100%,space-evenly,center);
     list-style: none;  
     li{
         text-transform: capitalize;

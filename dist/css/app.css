@@ -16,8 +16,16 @@ h1, h2, h3, h4, h5, p, li {
   color: #58402C;
 }
 
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 nav {
-  width: 1080px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +34,15 @@ nav {
 }
 
 .right_nav {
-  width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav_menu {
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -34,7 +50,7 @@ nav {
 }
 
 .menu_list {
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -70,42 +86,49 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .hero_wrapper {
-  width: 100vw;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 
 .hero_main_container {
-  width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .hero_title_container {
-  width: 500px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  min-width: 450px;
 }
 .hero_title_container h1 {
   font-size: 2.9rem;
   font-weight: 600;
   line-height: 4rem;
+  width: 90%;
 }
 .hero_title_container h3 {
   font-size: 1.35rem;
   font-weight: 400;
-  width: 450px;
+  width: 90%;
+}
+.hero_title_container a {
+  text-decoration: none;
+  color: #58402C;
 }
 
 .btn_double_container {
-  width: 500px;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -128,11 +151,12 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .hero_img {
-  width: 500px;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  min-width: 450px;
 }
 
 .hero_img img {
@@ -158,7 +182,7 @@ h1, h2, h3, h4, h5, p, li {
   background-color: #FFE7D2;
 }
 .organization_wrapper .section_title {
-  width: 600px;
+  width: 50%;
   line-height: 4rem;
   font-size: 1.2rem;
   text-align: center;
@@ -169,7 +193,7 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .problems_container {
-  width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +202,7 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .solutions_container {
-  width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +210,7 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .cards_container {
-  width: 1080px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,11 +219,12 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 .cards {
-  width: 460px;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-width: 300px;
 }
 .cards img {
   height: 100px;
@@ -212,4 +237,12 @@ h1, h2, h3, h4, h5, p, li {
   align-items: center;
   flex-direction: column;
   font-family: "lato";
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

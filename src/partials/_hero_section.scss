@@ -3,27 +3,35 @@
 @import 'partials/_commons';
 
 .hero_wrapper{
-    @include flex_wrapper(row);
+    @include flex_container(row,90%,space-between,center);
 }
 .hero_main_container{
-    @include flex_container(row,1080px,space-between,center);
+    @include flex_container(row,100%,space-between,center);
     flex-wrap: wrap;
+    margin-bottom: 50px;
+    
 }
 .hero_title_container{
-    @include flex_container(column,500px,center,flex-start);
+    @include flex_container(column,50%,center,flex-start);
+    min-width: 450px;
     h1{
         font-size: 2.9rem;
         font-weight: 600;
         line-height: 4rem;
+        width: 90%;
     }
     h3{
         font-size: 1.35rem;
         font-weight: 400;
-        width: 450px;
+        width: 90%;
     } 
+    a{
+        text-decoration:none;
+        color: $color_font;
+    }
 }
 .btn_double_container{
-    @include flex_container(row,500px,flex-start,center); 
+    @include flex_container(row,100%,flex-start,center); 
 }
 .btn{
     @include flex_container(row,180px,space-evenly,center);
@@ -36,7 +44,8 @@
     font-weight: 600;
 }
 .hero_img{
-    @include flex_container(column,500px,center,flex-start);
+    @include flex_container(column,50%,center,flex-start);
+    min-width: 450px;
 }
 .hero_img img{
     max-width: 100%;

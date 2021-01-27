@@ -10,3 +10,7 @@
     @include flex_wrapper(column);
     font-family: "lato";
 }
+
+main{
+    @include flex_container(column,100%,center,center);
+}
