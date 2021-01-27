@@ -335,10 +335,64 @@ h1, h2, h3, h4, h5, p, li {
 .started_wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   background-color: #93C7D0;
+  margin-top: 50px;
+}
+.started_wrapper a {
+  text-decoration: none;
+  color: #58402C;
+}
+
+.started_title {
+  font-size: 1.8rem;
+  width: 45%;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.square {
+  position: relative;
+  color: #58402C;
+  background-color: white;
+  width: 35%;
+  border: 2px solid #2C4792;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.square h4 {
+  color: #2C4792;
+  margin-top: 0;
+}
+.square h5 {
+  color: #58402C;
+  margin-top: 0;
+}
+.square i {
+  position: absolute;
+  color: #2C4792;
+  font-size: 2rem;
+  top: -3%;
+  left: 0;
+}
+
+.founder {
+  display: flex;
+}
+.founder img {
+  height: 50px;
+  padding-right: 20px;
+}
+
+.btn_started_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .gen_container {

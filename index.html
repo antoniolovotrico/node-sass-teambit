@@ -135,12 +135,16 @@
 
                     <!-- started section -->
                     <section class="started_wrapper" v-for="item in started">
-                        <div class="big_title">
+                        <div class="started_title">
                             <h2>{{item.title}} </h2>
                         </div>
                         <div class="square">
-                            <p>{{item.overview}} </p>
-                            <div>
+                            <i class="fas fa-quote-left"></i>
+                            <p>{{item.para1}} </p>
+                            <p>{{item.para2}} </p>
+                            <p>{{item.para3}} </p>
+                            <p>{{item.para4}} </p>
+                            <div class="founder">
                                 <img :src="item.imgFound1" alt="">
                                 <img :src="item.imgFound2" alt="">
                                 <div>
@@ -149,11 +153,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn_double_container">
+                        <div class="btn_started_container">
                             <button class="btn"><img :src="item.btnIcon1" class="img_btn" alt=""> {{item.btnText1}}</button><p>&nbsp;or&nbsp;</p> 
                             <button class="btn"><img :src="item.btnIcon2" class="img_btn" alt=""> {{item.btnText2}}</button>
                         </div>
-                        <p><a href="">{{item.email}} <i class="fas fa-arrow-right"></i></a></p>
+                        <p><a href="">{{item.email}} &nbsp;<i class="fas fa-arrow-right"></i></a></p>
 
                     </section>
                     <!-- //started section -->
@@ -161,7 +165,6 @@
             </div>
 
         </div>
-
 
 
 

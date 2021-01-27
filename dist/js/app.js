@@ -87,7 +87,10 @@ var app = new Vue({
     }],
     started: [{
       title: "See Teambit for yourself. Get started in seconds 🎉",
-      overview: "We are experiencing what Galuup calls 'an employee engagement crisis'. Just one-third of people at work are engaged.                                                       To improve performance and engagement companies rely on the same principles as industrial agefactories. But all those annual performance reviws and hundred-question surveys don't work anymore. People want regular feedback. Leaders who don't embrace this change end up with misaligned, disengaged and dwindling team.                                                We designed Teambit to change that. It empowers teams to make feedback a daily habit. Everybody knows what they are doing well and what they need to improve, leading to better performing, engaged and happier teams.                         We are on a mission to make worklife exciting. Come join us.",
+      para1: "We are experiencing what Galuup calls 'an employee engagement crisis'. Just one-third of people at work are engaged",
+      para2: "To improve performance and engagement companies rely on the same principles as industrial agefactories. But all those annual performance reviws and hundred-question surveys don't work anymore. People want regular feedback. Leaders who don't embrace this change end up with misaligned, disengaged and dwindling team",
+      para3: "We designed Teambit to change that. It empowers teams to make feedback a daily habit. Everybody knows what they are doing well and what they need to improve, leading to better performing, engaged and happier teams.",
+      para4: "We are on a mission to make worklife exciting. Come join us.",
       imgFound1: "./dist/img/alex.png",
       imgFound2: "./dist/img/bohdan.png",
       names: "Alex and Bohdan",

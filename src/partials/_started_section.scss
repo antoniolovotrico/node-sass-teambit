@@ -3,6 +3,52 @@
 @import 'partials/_commons';
 
 .started_wrapper{
-    @include flex_container(column,100%,center,center);
+    @include flex_container(column,100%,space-evenly,center);
     background-color: $main_bg;
+    margin-top: 50px;
+    a{
+        text-decoration: none;
+        color: $color_font;
+    }
+}
+.started_title{
+    font-size: 1.8rem;
+    width: 45%;
+    text-align:center; 
+    line-height: 6rem;
+}
+.square{
+    position: relative;
+    color:$color_font;
+    background-color: white;
+    width: 35%;
+    border: 2px solid #2C4792;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    h4{
+        color: #2C4792; 
+        margin-top: 0; 
+    }
+    h5{
+        color: $color_font;
+        margin-top: 0; 
+    }
+    i{
+        position: absolute;
+        color: #2C4792;
+        font-size: 2rem;
+        top: -3%;
+        left: 0;
+    }
+}
+.founder{
+    display: flex;
+    img{
+        height:50px;
+        padding-right: 20px     
+    }
+}
+.btn_started_container{
+    @include flex_container(row,100%,center,center); 
 }
