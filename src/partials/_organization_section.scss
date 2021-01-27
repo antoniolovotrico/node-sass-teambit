@@ -25,6 +25,7 @@
 }
 .cards_container{
     @include flex_container(row,1080px,center,center);
+    flex-wrap: wrap;
     
     
 }
