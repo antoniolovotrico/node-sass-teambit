@@ -340,6 +340,7 @@ h1, h2, h3, h4, h5, p, li {
   flex-direction: column;
   background-color: #93C7D0;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 .started_wrapper a {
   text-decoration: none;
@@ -393,6 +394,36 @@ h1, h2, h3, h4, h5, p, li {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.img_btn {
+  height: 20px;
+  width: 20px;
+}
+
+h1, h2, h3, h4, h5, p, li {
+  color: #58402C;
+}
+
+.footer_wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.col1 {
+  display: flex;
+  width: 25%;
+}
+
+.foot_col {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .gen_container {

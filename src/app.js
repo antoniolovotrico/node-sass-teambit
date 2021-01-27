@@ -120,6 +120,112 @@ let app = new Vue ({
                 btnIcon2:"./dist/img/slack-logo.svg",
                 email:"or use your email address"
             }
+        ],
+        footer: [
+            {
+                logo:"./dist/img/logo-small.svg",
+                footTitle:"helps teams create high performing cultures by making feedback a daily habit."
+            },
+            {    
+                product: [
+                    {
+                        title:"product",
+                        voice:"feedback",
+                    },
+                    {
+                        voice:"Surveys"
+                    },
+                    {
+                        voice:"reviews"
+                    },
+                    {
+                        voice:"praise"
+                    },
+                    {
+                        voice:"slack"
+                    },
+                    {
+                        voice:"integration"
+                    },
+                    {
+                        voice:"schedule"
+                    },
+                    {
+                        voice:"demo"
+                    },
+                    {
+                        voice:"pricing"
+                    },
+                ],
+            },
+            {
+                about: [
+                    {
+                        title:"about",
+                        voice:"feedback"
+                    },
+                    {
+                        voice:"Surveys"
+                    },
+                    {
+                        voice:"reviews"
+                    },
+                    {
+                        voice:"praise"
+                    }
+                ],
+            },
+            {   
+                connect: [
+                    {
+                        title:"connect",
+                        voice:"feedback"
+                    },
+                    {
+                        voice:"Surveys"
+                    },
+                    {
+                        voice:"reviews"
+                    },
+                    {
+                        voice:"praise"
+                    }
+                ]
+            },
+            {    
+                lobs: [
+                    {
+                        title:"lobs",
+                        voice:"feedback"
+                    },
+                    {
+                        voice:"Surveys"
+                    },
+                    {
+                        voice:"reviews"
+                    },
+                    {
+                        voice:"praise"
+                    }
+                ]
+            },
+            {
+                fromTheBlog: [
+                    {
+                        title:"from the blog",
+                        voice:"how to change your company culture: a four step framework"
+                    },
+                    {
+                        voice:"how teams can be more productive by killing 8-hour workday"
+                    },
+                    {
+                        voice:"how to build high performing teams inspired by nature"
+                    },
+                    {
+                        voice:"view all"
+                    }
+                ]
+            }
         ]
 
     }

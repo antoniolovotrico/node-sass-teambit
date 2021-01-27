@@ -158,10 +158,36 @@
                             <button class="btn"><img :src="item.btnIcon2" class="img_btn" alt=""> {{item.btnText2}}</button>
                         </div>
                         <p><a href="">{{item.email}} &nbsp;<i class="fas fa-arrow-right"></i></a></p>
-
                     </section>
                     <!-- //started section -->
                 </main>
+                <footer class="footer_wrap">
+                    <div class="col1">
+                        <img :src="footer[0].logo" alt="">
+                        <h3><b>Teambit</b>{{footer[0].footTitle}}</h3>
+                    </div>
+                    <div class="foot_col">
+                        <h2>{{footer[1].product[0].title}}</h2>
+                        <a v-for="item in footer[1].product" href="#">{{item.voice}}</a>
+                    </div>
+                    <div class="foot_col">
+                        <h2>{{footer[2].about[0].title}}</h2>
+                        <a v-for="item in footer[2].about" href="#">{{item.voice}}</a>
+                    </div>
+                    <div class="foot_col">
+                        <h2>{{footer[3].connect[0].title}}</h2>
+                        <a v-for="item in footer[3].connect" href="#">{{item.voice}}</a>
+                    </div>
+                    <div class="foot_col">
+                        <h2>{{footer[4].lobs[0].title}}</h2>
+                        <a v-for="item in footer[1].product" href="#">{{item.voice}}</a>
+                    </div>
+                    <div class="foot_col">
+                        <h2>{{footer[5].fromTheBlog[0].title}}</h2>
+                        <a v-for="item in footer[5].fromTheBlog" href="#">{{item.voice}}</a>
+                    </div>
+
+                </footer>
             </div>
 
         </div>

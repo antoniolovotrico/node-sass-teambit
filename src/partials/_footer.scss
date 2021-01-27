@@ -1,0 +1,18 @@
+@import 'partials/_variables';
+@import 'partials/_mixins';
+@import 'partials/_commons';
+
+.footer_wrap{
+    @include flex_container(row,90%,space-between,flex-start);
+}
+.col1{
+    display: flex;
+    width: 25%;
+}
+.foot_col{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
