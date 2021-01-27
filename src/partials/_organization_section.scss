@@ -4,7 +4,7 @@
 
 .organization_wrapper{
     @include flex_container(column,100%,center,center);
-    background-color: $bg_salmon;
+    background-color: $main_bg;
     .section_title{
         width: 50%;
         line-height: 4rem;

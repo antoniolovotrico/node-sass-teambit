@@ -130,9 +130,33 @@
                                 <img :src="platform[3].tableImg" alt="">
                             </div>
                         </div>
-
                     </section>
                     <!-- //platform section -->
+
+                    <!-- started section -->
+                    <section class="started_wrapper" v-for="item in started">
+                        <div class="big_title">
+                            <h2>{{item.title}} </h2>
+                        </div>
+                        <div class="square">
+                            <p>{{item.overview}} </p>
+                            <div>
+                                <img :src="item.imgFound1" alt="">
+                                <img :src="item.imgFound2" alt="">
+                                <div>
+                                    <h4>{{item.names}}</h4>
+                                    <h5>{{item.jobs}}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_double_container">
+                            <button class="btn"><img :src="item.btnIcon1" class="img_btn" alt=""> {{item.btnText1}}</button><p>&nbsp;or&nbsp;</p> 
+                            <button class="btn"><img :src="item.btnIcon2" class="img_btn" alt=""> {{item.btnText2}}</button>
+                        </div>
+                        <p><a href="">{{item.email}} <i class="fas fa-arrow-right"></i></a></p>
+
+                    </section>
+                    <!-- //started section -->
                 </main>
             </div>
 

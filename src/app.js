@@ -103,6 +103,21 @@ let app = new Vue ({
                 overview:"Make it a habit to recognize and praise people who do great work.",
                 picture:"./dist/img/recognition.jpg"
             },
+        ],
+        started: [
+            {
+                title:"See Teambit for yourself. Get started in seconds 🎉",
+                overview:"We are experiencing what Galuup calls 'an employee engagement crisis'. Just one-third of people at work are engaged.                                                       To improve performance and engagement companies rely on the same principles as industrial agefactories. But all those annual performance reviws and hundred-question surveys don't work anymore. People want regular feedback. Leaders who don't embrace this change end up with misaligned, disengaged and dwindling team.                                                We designed Teambit to change that. It empowers teams to make feedback a daily habit. Everybody knows what they are doing well and what they need to improve, leading to better performing, engaged and happier teams.                         We are on a mission to make worklife exciting. Come join us.",
+                imgFound1:"./dist/img/alex.png",
+                imgFound2:"./dist/img/bohdan.png",
+                names:"Alex and Bohdan",
+                jobs:"Co-Founders at Teambit",
+                btnText1:"Sign up with Google",
+                btnIcon1:"./dist/img/google-logo.svg",
+                btnText2:"Sign up with Slack",
+                btnIcon2:"./dist/img/slack-logo.svg",
+                email:"or use your email address"
+            }
         ]
 
     }

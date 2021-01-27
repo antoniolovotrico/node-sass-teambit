@@ -323,6 +323,24 @@ h1, h2, h3, h4, h5, p, li {
   width: 100%;
 }
 
+.img_btn {
+  height: 20px;
+  width: 20px;
+}
+
+h1, h2, h3, h4, h5, p, li {
+  color: #58402C;
+}
+
+.started_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #93C7D0;
+}
+
 .gen_container {
   width: 100vw;
   display: flex;

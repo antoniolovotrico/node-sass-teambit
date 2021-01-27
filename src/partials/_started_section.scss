@@ -1,0 +1,8 @@
+@import 'partials/_variables';
+@import 'partials/_mixins';
+@import 'partials/_commons';
+
+.started_wrapper{
+    @include flex_container(column,100%,center,center);
+    background-color: $main_bg;
+}
