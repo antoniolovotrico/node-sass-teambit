@@ -77,6 +77,33 @@ let app = new Vue ({
                     },
                 ]    
             }
-        ]              
+        ],
+        platform: [
+            {
+                tableImg:"./dist/img/employee-feedback.jpg",
+                title:"Feedback to help teammates improve",
+                overview:"Empawer your teammates to know in real time what they are doing well and what they need to improve.",
+                picture:"./dist/img/communication.jpg"
+            },
+            {
+                tableImg:"./dist/img/employee-survey.jpg",
+                title:"Surveys to help the team be better",
+                overview:"Get real-time insights into your team with research-backed, lightweight and regular surveys.",
+                picture:"./dist/img/insights.jpg"
+            },
+            {
+                tableImg:"./dist/img/performance-review.jpg",
+                title:"Reviews to help teammates get a fair evaluation",
+                overview:"Make better compensation and promotion decision with objective and quick performance reviews.",
+                picture:"./dist/img/review.jpg"
+            },
+            {
+                tableImg:"./dist/img/employee-recognition.jpg",
+                title:"Praise to help teammates feel valued",
+                overview:"Make it a habit to recognize and praise people who do great work.",
+                picture:"./dist/img/recognition.jpg"
+            },
+        ]
+
     }
 })
