@@ -7,11 +7,18 @@ header{
 
 }
 nav{
-    @include flex_container(row,90%,space-between,center);
+    @include flex_container(row,80%,space-between,center);
     border-bottom: 1px solid $color_font;
 }
+.logo{
+    @include flex_container(row,20%,flex-start,center);
+    height: 60px;
+}
+.hamburger{
+    display: none;
+}
 .right_nav{
-    @include flex_container(row,100%,flex-end,center);
+    @include flex_container(row,80%,flex-end,center);
 }
 .nav_menu{
     @include flex_container(row,50%,flex-end,center);

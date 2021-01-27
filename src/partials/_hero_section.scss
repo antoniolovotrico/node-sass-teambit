@@ -3,7 +3,7 @@
 @import 'partials/_commons';
 
 .hero_wrapper{
-    @include flex_container(row,90%,space-between,center);
+    @include flex_container(row,80%,space-between,center);
 }
 .hero_main_container{
     @include flex_container(row,100%,space-between,center);

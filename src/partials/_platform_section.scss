@@ -6,7 +6,7 @@
     width: 100%;
 }
 .container1{
-    @include flex_container(row,80%,flex-start,flex-start);
+    @include flex_container(row,100%,flex-start,flex-start);
     flex-wrap: wrap;
     margin-top: 50px;
 }

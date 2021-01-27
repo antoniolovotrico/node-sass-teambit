@@ -1,14 +1,247 @@
 /* media query xs size 550px */
 @media screen and (max-width:550px){
-
+    nav{
+        @include flex_container(row,100%,space-between,center);
+        border-bottom: 1px solid $color_font;
+    }
+    .logo{
+        padding-left: 40px;
+    }
+    .hamburger{
+        @include flex_container(row,80%,flex-end,center);
+        padding-right:40px;
+        color: $color_font;
+        font-size: 2rem;
+    }
+    .right_nav{
+        display: none;
+    }
+    .hero_title_container{
+        @include flex_container(column,100%,center,center);
+        text-align: center;
+    }
+    .btn_double_container{
+        @include flex_container(row,100%,center,center); 
+    }
+    .hero_img{
+        @include flex_container(column,100%,center,center);
+    }
+    .organization_wrapper{
+        .section_title{
+            width: 60%;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    }
+    .cards{
+        @include flex_container(column,90%,center,center);
+        min-width: 300px;
+        img{
+            height: 100px;
+        }
+        p{
+            text-align: center;  
+        }
+        padding-bottom: 50px;  
+    }
+    .container1{
+        @include flex_container(row,100%,center,center);
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .container2{
+        @include flex_container(row,100%,center,center);
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .container3{
+        @include flex_container(row,100%,center,center);
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .container4{
+        @include flex_container(row,100%,center,center);
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .platform_title_container{
+        @include flex_container(column,90%,space-between,center);
+        text-align: center;
+        min-width: 300px;
+        h2{
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 4rem;
+            width: 90%;
+        }
+        h4{
+            font-size: 1.4rem;
+            font-weight: 300;
+            width: 90%;
+        } 
+        a{
+            text-decoration:none;
+            color: $btn_color;
+            font-size: 1.5rem;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .platform_img{
+        @include flex_container(column,90%,center,center);
+        min-width: 300px;
+        img{
+            width: 100%;
+        }
+    }
+    .started_title{
+        font-size: 1.8rem;
+        width: 50%;
+        text-align:center; 
+        line-height: 5rem;
+    }
+    .square{
+        position: relative;
+        width: 75%;
+    }
+    .footer_wrap{
+        @include flex_container(row,85%,flex-start,flex-start);     
+    }
+    .col1{
+        min-width: 100px;
+        width: 95%;
+        align-items: center;
+       
+    }
+    .foot_col{
+        min-width: 150px;
+        width: 10%;
+    } 
 }
 
 /* media query screen size portrait tablet 551-998px */
 @media all and (min-width: 551px) and (max-width: 998px){
-
-}
-
-/* media query screen size  larger than 998px */
-@media all and (min-width: 999px){
-    
+    nav{
+        @include flex_container(row,100%,space-between,center);
+        border-bottom: 1px solid $color_font;
+    }
+    .logo{
+        padding-left: 40px;
+    }
+    .hamburger{
+        @include flex_container(row,80%,flex-end,center);
+        padding-right:40px;
+        color: $color_font;
+        font-size: 2rem;
+    }
+    .right_nav{
+        display: none;
+    }
+    .hero_title_container{
+        @include flex_container(column,100%,center,center);
+        text-align: center;
+    }
+    .btn_double_container{
+        @include flex_container(row,100%,center,center); 
+    }
+    .hero_img{
+        @include flex_container(column,100%,center,center);
+    }
+    .organization_wrapper{
+        .section_title{
+            width: 60%;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    }
+    .cards{
+        @include flex_container(column,90%,center,center);
+        min-width: 300px;
+        img{
+            height: 100px;
+        }
+        p{
+            text-align: center;  
+        }
+        padding-bottom: 50px;  
+    }
+    .container1{
+        @include flex_container(row,100%,center,center);
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .container2{
+        @include flex_container(row,100%,center,center);
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .container3{
+        @include flex_container(row,100%,center,center);
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .container4{
+        @include flex_container(row,100%,center,center);
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .platform_title_container{
+        @include flex_container(column,90%,space-between,center);
+        text-align: center;
+        min-width: 300px;
+        h2{
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 4rem;
+            width: 90%;
+        }
+        h4{
+            font-size: 1.4rem;
+            font-weight: 300;
+            width: 90%;
+        } 
+        a{
+            text-decoration:none;
+            color: $btn_color;
+            font-size: 1.5rem;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .platform_img{
+        @include flex_container(column,90%,center,center);
+        min-width: 300px;
+        img{
+            width: 100%;
+        }
+    }
+    .started_title{
+        font-size: 1.8rem;
+        width: 50%;
+        text-align:center; 
+        line-height: 5rem;
+    }
+    .square{
+        position: relative;
+        width: 75%;
+    }
+    .footer_wrap{
+        @include flex_container(row,80%,space-between,flex-start);     
+    }
+    .col1{
+        min-width: 150px;
+        width: 95%;
+        align-items: center;
+       
+    }
+    .foot_col{
+        min-width: 120px;
+        width: 30%;
+    }
 }
