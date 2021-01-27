@@ -1,0 +1,28 @@
+@import 'partials/_variables';
+@import 'partials/_mixins';
+@import 'partials/_commons';
+
+nav{
+    @include flex_container(row,1080px,space-between,center);
+    border-bottom: 1px solid $color_font;
+}
+.right_nav{
+    @include flex_container(row,600px,flex-end,center);
+}
+.menu_list{
+    @include flex_container(row,400px,space-evenly,center);
+    list-style: none;  
+    li{
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+}
+.nav_btn{
+    @include flex_container(row,100px,space-evenly,center);
+    vertical-align: middle;
+    height: 40px;
+    color: #2C4792;
+    border: 1px solid #2C4792;
+    border-radius: 5px;
+    font-weight: 500;
+}

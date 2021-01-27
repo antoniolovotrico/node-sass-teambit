@@ -1,0 +1,36 @@
+@import 'partials/_variables';
+@import 'partials/_mixins';
+@import 'partials/_commons';
+
+.organization_wrapper{
+    @include flex_wrapper(column);
+    background-color: $bg_salmon;
+    .section_title{
+        width: 600px;
+        line-height: 4rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .img_big{
+        padding: 80px;
+        height:300px;
+    }
+}
+.problems_container{
+    @include flex_wrapper(column);
+    border-bottom: 1px solid $color_font;
+}
+.solutions_container{
+    @include flex_wrapper(column);
+}
+.cards_container{
+    @include flex_container(row,1080px,center,center);
+    
+    
+}
+.cards{
+    @include flex_container(column,460px,center,center);
+    img{
+        height: 100px;
+    }
+}

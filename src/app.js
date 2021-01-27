@@ -4,8 +4,7 @@ let app = new Vue ({
         nav:[
            
             {
-                logo:"./dist/img/google-logo.svg",
-                title:"Teambit",
+                logo:"./dist/img/logo.svg",
                 voice:"solution"
             },
             {
@@ -34,40 +33,50 @@ let app = new Vue ({
         ],
         organization: [
             {
-                titleProb:"Traditional people processes lead to disengagement and turnover.",
-                imgProb:"./dist/img/hardcore.png",
-                paraProb:"They are hardocore, formal and disconnected"
+                problem: [
+                    {
+                        title:"Traditional people processes lead to disengagement and turnover.",
+                        img:"./dist/img/hardcore.png",
+                        para:"They are hardocore, formal and disconnected"
+                    },
+                    {
+                        img:"./dist/img/nofeedback.png",
+                        para:"They don't encourage regular feedback"
+                    },
+                    {
+                        img:"./dist/img/notsafe.png",
+                        para:"They don't make it safe to speak up"
+                    }
+                ],
             },
             {
-                imgProb:"./dist/img/nofeedback.png",
-                paraProb:"They don't encourage regular feedback"
+                solution: [
+                    {
+                        title:"It doesn't have to be like that. Teambit is a modern tion that teammates love.",
+                        img:"./dist/img/lightweight.png",
+                        para:"It's lightweight fun and interconnected",
+                        lastTitle:"Here is how it works"
+                    },
+                    {
+                        img:"./dist/img/feedbacksuggestions.png",
+                        para:"It encourages regular feedback with contextual request"
+                    },
+                    {
+                        img:"./dist/img/safe.png",
+                        para:"it creates a safe environment for dialog"
+                    }
+                ],
             },
             {
-                imgProb:"./dist/img/notsafe.png",
-                paraProb:"They don't make it safe to speak up"
-            },
-            {
-                imgProb:"./dist/img/before.png"
-            },
-            {
-                titleSolu:"It doesn't have to be like that. Teambit is a modern solution that teammates love.",
-                imgSolu:"./dist/img/lightweight.png",
-                paraSolu:"They are hardocore, formal and disconnected"
-            },
-            {
-                imgSolu:"./dist/img/feedbacksuggestions.png",
-                paraSolu:"They don't encourage regular feedback"
-            },
-            {
-                imgSolu:"./dist/img/safe.png",
-                paraSolu:"They don't make it safe to speak up"
-            },
-            {
-                imgSolu:"./dist/img/after.png"
-            },
-
-        ]
-
-                  
+                pictures:[
+                    {
+                        problemPic:"./dist/img/before.png"
+                    },
+                    {
+                        solutionPic:"./dist/img/after.png"
+                    },
+                ]    
+            }
+        ]              
     }
 })

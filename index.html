@@ -17,31 +17,30 @@
         <div id="app">
             <div class="gen_container">
                 <header>
-                    <nav class="d_flex">
+                    <nav>
                         <div class="logo">
                             <img :src="nav[0].logo" alt="">
-                            <h3>{{nav[0].title}}</h3>
                         </div>
-                        <div class="nav_menu">
-                            <ul class="menu_list d_flex" v-for="item in nav">
-                                <li class="menu_voice">{{item.voice}}</li>
-                            </ul>
-                        </div>
-                        <div class="nav_btn">
-                            <button><img :src="nav[3].btnIcon" alt="">{{nav[3].btnText}}</button>
+                        <div class="right_nav">
+                            <div class="nav_menu">
+                                <ul class="menu_list">
+                                    <li class="menu_voice" v-for="item in nav"> {{item.voice}} </li>
+                                </ul>
+                            </div>
+                            <button class="nav_btn"><img :src="nav[3].btnIcon" class="img_btn" alt="">{{nav[3].btnText}}</button>
                         </div>
                     </nav>
                 </header>
                 <main>
                     <!-- hero section -->
-                    <section class="hero_wrapper d_flex">
-                        <div class="hero_main_container d_flex">
-                            <div class="hero_title_container d_flex" v-for="item in hero">
+                    <section class="hero_wrapper">
+                        <div class="hero_main_container">
+                            <div class="hero_title_container" v-for="item in hero">
                                 <h1>{{item.title}}</h1>
                                 <h3>{{item.overview}}</h3>
-                                <div class="btn_double_container d_flex">
-                                    <button><img :src="item.btnIcon1" alt=""> {{item.btnText1}}</button> or
-                                    <button><img :src="item.btnIcon2" alt=""> {{item.btnText2}}</button>
+                                <div class="btn_double_container">
+                                    <button class="btn"><img :src="item.btnIcon1" class="img_btn" alt=""> {{item.btnText1}}</button><p>&nbsp;or&nbsp;</p> 
+                                    <button class="btn"><img :src="item.btnIcon2" class="img_btn" alt=""> {{item.btnText2}}</button>
                                 </div>
                                 <p><a href="">{{item.email}} <i class="fas fa-arrow-right"></i></a></p>
                             </div>
@@ -53,33 +52,38 @@
                     </section>
                     <!-- //hero section -->
 
-                    <!-- problem and solution section -->
-                    <section class="organization_wrapper d_flex">
-                        <div class="problems_container d_flex">
-                            <div class="section_title" v-for="item in organization">
-                                <h2>{{item.titleProb}}</h2>
+                    <!-- organization section -->
+                    <section class="organization_wrapper">
+                        <div class="problems_container">
+                            <div class="section_title">
+                                <h2>{{organization[0].problem[0].title}}</h2>
                             </div>
-                            <div class="cards_container d_flex">
-                                <div class="cards d_flex" v-for="item in organization">
-                                    <img :src="item.imgProb" alt="">
-                                    <p>{{item.paraProb}}</p>
+                            <div class="cards_container">
+                                <div class="cards" v-for="item in organization[0].problem">
+                                    <img :src="item.img" alt="">
+                                    <p>{{item.para}}</p>
                                 </div>
                             </div>
+                            <img class="img_big" :src="organization[2].pictures[0].problemPic" alt="">
                         </div>
-                        <div class="solutions_container d_flex">
-                            <div class="section_title" v-for="item in organization">
-                                <h2>{{item.titleSolu}}</h2>
+                        <div class="solutions_container">
+                            <div class="section_title">
+                                <h2>{{organization[1].solution[0].title}}</h2>
                             </div>
-                            <div class="cards_container d_flex">
-                                <div class="cards d_flex" v-for="item in organization">
-                                    <img :src="item.imgSolu" alt="">
-                                    <p>{{item.paraSolu}}</p>
+                            <div class="cards_container">
+                                <div class="cards" v-for="item in organization[1].solution">
+                                    <img :src="item.img" alt="">
+                                    <p>{{item.para}}</p>
                                 </div>
+                            </div>
+                            <img class="img_big" :src="organization[2].pictures[1].solutionPic" alt="">
+                            <div class="section_title">
+                                <h2>{{organization[1].solution[0].lastTitle}}</h2>
                             </div>
                         </div>
 
                     </section>
-                    <!-- //problem and solution section -->
+                    <!-- //organization section -->
                 </main>
             </div>
 
