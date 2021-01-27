@@ -3,16 +3,34 @@
 @import 'partials/_commons';
 
 .footer_wrap{
-    @include flex_container(row,90%,space-between,flex-start);
+    @include flex_container(row,80%,space-between,flex-start);
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 .col1{
     display: flex;
     width: 25%;
+    line-height: 2rem;
+    align-items: baseline;
+    b{
+        color: #2C4792;
+    }
+    img{
+        margin-right: 20px;
+        width: 100px;
+    }
 }
 .foot_col{
     display: flex;
     flex-direction: column;
-    width: 15%;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 10%;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    a{
+        text-decoration: none;
+        text-transform: capitalize;
+        line-height: 1.8rem;
+        color: $color_font;
+        font-size: 0.9rem;
+    }
 }

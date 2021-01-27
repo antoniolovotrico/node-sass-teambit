@@ -26,15 +26,15 @@
     flex-wrap: wrap;
 }
 .platform_title_container{
-    @include flex_container(column,35%,space-between,flex-start);
+    @include flex_container(column,25%,space-between,flex-start);
     min-width: 300px;
-    h1{
+    h2{
         font-size: 2rem;
         font-weight: 600;
         line-height: 4rem;
         width: 90%;
     }
-    h3{
+    h4{
         font-size: 1.5rem;
         font-weight: 300;
         width: 90%;
@@ -49,7 +49,7 @@
     }
 }
 .platform_img{
-    @include flex_container(column,55%,center,flex-start);
+    @include flex_container(column,50%,center,flex-start);
     min-width: 300px;
     img{
         width: 100%;
